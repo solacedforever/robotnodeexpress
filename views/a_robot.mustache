@@ -16,7 +16,7 @@
       <br>{{email}} | {{phone}}</p>
       <strong>Education: </strong><li>{{university}}</li></h2>
       <br>
-      <strong>Skills: </strong><li>{{skills}}</li>
+      <strong>Skills: </strong>{{ #skills }}<li>{{.}}</li>{{/ skills }}
       {{ /robot }}
     </section>
     <br>
