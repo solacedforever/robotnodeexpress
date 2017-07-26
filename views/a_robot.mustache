@@ -11,15 +11,15 @@
       <img id="personalimg" src="{{ avatar }}" alt="{{ name }}">
       <h2>{{name}}</h2>
       <p>{{address.city}} , {{address.country}}
-        {{ #job }}{{ job }}{{ /job }}{{ ^job }}
-          <p id="looking">Available for hire</p>{{ /job }} {{company}}
-          <br>{{email}} | {{phone}}</p>
+      {{ #job }}{{ job }}{{ /job }}{{ ^job }}
+      <p id="looking">Available for hire</p>{{ /job }} {{company}}
+      <br>{{email}} | {{phone}}</p>
       <strong>Education: </strong><li>{{university}}</li></h2>
       <br>
       <strong>Skills: </strong><li>{{skills}}</li>
       {{ /robot }}
     </section>
-      <br>
-      <a href ="http://localhost:3000/index">HOME</a>
+    <br>
+    <a href ="http://localhost:3000/index">HOME</a>
   </body>
 </html>

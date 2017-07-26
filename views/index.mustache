@@ -7,22 +7,24 @@
 </head>
   <body id="indexbody">
     <section id=indexsection>
-<div class=user>
-</div>
-  <div class =users>
-      {{ #users }}
-    <a href ="http://localhost:3000/robot/{{username}}">
-      <img src="{{ avatar }}" alt="{{ name }}"></a>
-          <h1>{{name}}</h1>
-          <p>{{ #job }}
-          {{ job }}
-          {{ /job }}
-          {{ ^job }}
-          <p id="looking">Available for hire</p>
-          {{ /job }}{{company}}</p>
-        <hr>
-      {{ /users }}
-      </div>
-    </section>
-  </body>
+        <div class=user>
+          <div class =users>
+            {{ #users }}
+            <div id = "robotprofile">
+            <a href ="http://localhost:3000/robot/{{username}}">
+            <img src="{{ avatar }}" alt="{{ name }}"></a>
+            <h1>{{name}}</h1>
+            <p>{{ #job }}
+            {{ job }}
+            {{ /job }}
+            {{ ^job }}
+            <p id="looking">Available for hire</p>
+            {{ /job }}{{company}}</p>
+            <hr>
+            </div>
+            {{ /users }}
+          </div>
+        </div>
+      </section>
+    </body>
 </html>
