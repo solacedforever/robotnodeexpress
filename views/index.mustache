@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <meta charset="UTF-8"/>
     <title> Served by Node</title>
 </head>
   <body id="indexbody">
-    {{ #users }}
-    <section>
-      <a href ="http://localhost:3000/robot/{{username}}">
+    <section id=indexsection>
+<div class=user>
+</div>
+  <div class =users>
+      {{ #users }}
+    <a href ="http://localhost:3000/robot/{{username}}">
       <img src="{{ avatar }}" alt="{{ name }}"></a>
-      <h1>{{name}}</h1>
-      <p>{{ #job }}
+          <h1>{{name}}</h1>
+          <p>{{ #job }}
           {{ job }}
           {{ /job }}
           {{ ^job }}
           <p id="looking">Available for hire</p>
           {{ /job }}{{company}}</p>
+        <hr>
       {{ /users }}
+      </div>
     </section>
   </body>
 </html>

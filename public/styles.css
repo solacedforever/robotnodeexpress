@@ -1,12 +1,15 @@
-#indexbody {
-display:flex;
-flex-wrap:wrap;
-justify-content:space-between;
+#indexsection {
+align-items:center;
 }
 #looking {
   color:red;
 }
-#personalbody {
-  color:red;
-  background-color:black;
+#personalsection {
+  border:2px solid black;
+  margin-right:900px;
+
+}
+#personalimg {
+  border:2px solid lightgrey;
+  border-radius:200px;
 }
